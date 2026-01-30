@@ -20,8 +20,8 @@ function decrypt(message, shift) {
 }
 
 // Example usage:
-const message = 'BNXJRWRZXF';
-const shift = 5;
+const message = 'BGUTBMBGZTFHNLXMKTIPBMAVAXXLXTEPTRLEXTOXKHHFYHKMAXFHNLX';
+const shift = 1;
 const decrypted = decrypt(message, shift);
 
 console.log(`Original encrypted text:  ${message}`);

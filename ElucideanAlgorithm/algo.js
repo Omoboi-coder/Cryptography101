@@ -1,23 +1,16 @@
 
-/**
- * Euclidean Algorithm - Finding the GCD (Greatest Common Divisor)
- * of two numbers
- */
 
 /**
- * Euclidean Algorithm using Modulo (more efficient)
- * @param {number} a - First number
- * @param {number} b - Second number
- * @returns {number} The GCD of a and b
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number} 
  */
 function gcdModulo(a, b) {
-  // Ensure both numbers are positive
+
   a = Math.abs(a);
   b = Math.abs(b);
 
-  // Continue until b becomes 0
   while (b !== 0) {
-    // Replace a with b, and b with remainder of a divided by b
     let remainder = a % b;
     a = b;
     b = remainder;
@@ -27,17 +20,17 @@ function gcdModulo(a, b) {
 }
 
 /**
- * Euclidean Algorithm using Subtraction (simpler but slower)
- * @param {number} a - First number
- * @param {number} b - Second number
- * @returns {number} The GCD of a and b
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number}
  */
+
 function gcdSubtraction(a, b) {
-  // Ensure both numbers are positive
+ 
   a = Math.abs(a);
   b = Math.abs(b);
 
-  // Continue until a and b are equal
+  // We Continue until a and b are equal
   while (a !== b) {
     if (a > b) {
       a = a - b;
@@ -50,13 +43,12 @@ function gcdSubtraction(a, b) {
 }
 
 /**
- * Recursive implementation of Euclidean Algorithm
- * @param {number} a - First number
- * @param {number} b - Second number
- * @returns {number} The GCD of a and b
+ * @param {number} a 
+ * @param {number} b 
+ * @returns {number} 
  */
 function gcdRecursive(a, b) {
-  // Ensure both numbers are positive
+
   a = Math.abs(a);
   b = Math.abs(b);
 
@@ -65,7 +57,6 @@ function gcdRecursive(a, b) {
     return a;
   }
 
-  // Recursive case: call gcd with b and remainder of a/b
   return gcdRecursive(b, a % b);
 }
 
