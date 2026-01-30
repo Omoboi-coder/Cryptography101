@@ -1,14 +1,20 @@
-import './globals.css';
+import "./globals.css";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"]
+});
 
 export const metadata = {
-  title: 'Caesar Cipher - Encrypt & Decrypt',
-  description: 'A simple tool to encrypt and decrypt messages using the Caesar cipher',
+  title: "Caesar Cipher Lab",
+  description: "A clean Caesar cipher tool you can deploy anywhere."
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={spaceGrotesk.className}>{children}</body>
     </html>
   );
 }

@@ -1,24 +1,25 @@
 {
-  "name": "next-ui",
-  "version": "0.1.0",
+  "name": "ceaser-cypher-ui",
   "private": true,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "next": "^16.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "overrides": {
+    "@next/swc": "15.5.11"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.6",
-    "tailwindcss": "^4"
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.17"
   }
 }
